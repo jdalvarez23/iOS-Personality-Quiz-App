@@ -9,6 +9,8 @@
 import UIKit
 
 class ResultsViewController: UIViewController {
+    
+    var responses: [Answer]! // initialize responses variable from QuestionViewController 
 
     override func viewDidLoad() {
         super.viewDidLoad()
