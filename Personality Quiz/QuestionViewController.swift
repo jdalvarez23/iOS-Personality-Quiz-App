@@ -232,7 +232,8 @@ class QuestionViewController: UIViewController {
         
         // execute if expected segue is ResultsSegue
         if segue.identifier == "ResultsSegue" {
-            
+            let resultsViewController = segue.destination as! ResultsViewController // set value to ResultsViewController
+            resultsViewController.responses = answersChosen // pass chosen answers to ResultsViewController & set value to chosen answers
         }
         
     }
