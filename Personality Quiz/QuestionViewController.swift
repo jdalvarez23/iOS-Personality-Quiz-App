@@ -39,6 +39,7 @@ class QuestionViewController: UIViewController {
     
     
     @IBOutlet weak var questionProgressView: UIProgressView!
+
     
     
     
@@ -70,6 +71,7 @@ class QuestionViewController: UIViewController {
 
         // Do any additional setup after loading the view.
         updateUI() // call method that displays questions to the player
+        questionProgressView.transform = questionProgressView.transform.scaledBy(x: 1, y: 5)
     }
     
     // method that executes when the user presses a single answer question button
